@@ -1,0 +1,39 @@
+.alert-box {
+  border-radius: 0.3rem;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.alert-primary {
+  background-color: rgb(150, 90, 219);
+  color: white;
+}
+
+.alert-box .link-text,
+.alert-box .btn {
+  font-weight: 500;
+}
+.alert-secondary {
+  background-color: gray;
+  color: white;
+}
+.alert-information {
+  background-color: rgb(24, 8, 250);
+  color: white;
+}
+.alert-success {
+  background-color: green;
+  color: white;
+}
+.alert-error {
+  color: white;
+  background-color: red;
+}
+.alert-warning {
+  color: white;
+  background-color: orange;
+}
