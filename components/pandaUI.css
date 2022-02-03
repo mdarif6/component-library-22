@@ -1,0 +1,11 @@
+@import url(./avatar/avatar.css);
+@import url(./alert/alert.css);
+
+:root {
+  --primary-color: rgb(150, 90, 219);
+  --secondary-color: gray;
+  --information-color: rgb(24, 8, 250);
+  --success-color: green;
+  --error-color: red;
+  --warning-color: orange;
+}
