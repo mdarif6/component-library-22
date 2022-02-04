@@ -1,11 +1,33 @@
 @import url(./avatar/avatar.css);
 @import url(./alert/alert.css);
-
+@import url(./badge/badge.css);
+@import url(./button/button.css);
+@import url(./card/card.css);
+@import url(./input/input.css);
+@import url(./image/image.css);
 :root {
-  --primary-color: rgb(150, 90, 219);
-  --secondary-color: gray;
-  --information-color: rgb(24, 8, 250);
-  --success-color: green;
-  --error-color: red;
-  --warning-color: orange;
+  --pd-default-color: #6e6969;
+  --pd-primary-color: #8a29e6;
+  --pd-dark-primary-color: #6306bb;
+  --pd-secondary-color: #a76ddd;
+  --pd-dark-secondary-color: #8445be;
+  --pd-danger-color: #db2525;
+  --pd-light-red-color: #c96363;
+  --pd-success-color: #31a321;
+  --pd-warning-color: #ee9e0a;
+  --pd-information-color: #4b9ce7;
+  --pd-dark-color: #4b4a4a;
+  --pd-black-color: #000000;
+  --pd-skyblue-color: #87ceeb;
+  --pd-blue-color: #0000ff;
+  --pd-red-color: #ff0000;
+  --pd-green-color: #008000;
+  --pd-white-color: #ffffff;
+  --pd-off-white-color: #a89b9b;
+  --pd-white-text-color: #ffffff;
+  --pd-online-color: #17df17;
+  --pd-offline-color: #d6b0b0;
+  --pd-away-color: #ffa500;
+  --pd-busy-color: #f32020;
+  --pd-box-shadow-color: #c4a8a8;
 }
