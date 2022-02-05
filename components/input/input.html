@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input | Panda UI</title>
+    <link rel="stylesheet" href="../pandaUI.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Inputs with User's Credential -->
+
+    <form class="inputs">
+      <div class="input-text">
+        <label>First name:</label>
+        <input type="text" />
+      </div>
+      <div class="input-text">
+        <label>Last name:</label>
+        <input type="text" />
+      </div>
+      <div class="input-text">
+        <label>Password:</label>
+        <input type="password" />
+      </div>
+    </form>
+
+    <!-- Mandatory Input  -->
+
+    <form class="inputs">
+      <div class="input-text error">
+        <label>Username *</label>
+        <input type="text" />
+        <div class="error-msg"></div>
+      </div>
+
+      <div class="input-text error">
+        <label class="error-msg">Password *</label>
+        <input type="password" />
+        <div class="error-msg">Password is a required field</div>
+      </div>
+    </form>
+
+    <!-- Success and Fail Inputs -->
+
+    <form class="inputs">
+      <div class="input-text validation-error">
+        <label>Password *</label>
+        <input type="password" />
+        <div class="error-msg">Your Password is too short</div>
+      </div>
+
+      <div class="input-text validation-success">
+        <label class="error-msg">Password </label>
+        <input type="password" />
+        <div class="success-msg">Your Password is strong</div>
+      </div>
+    </form>
+
+    <!-- Verification Inputs -->
+
+    <form class="inputs verification">
+      <div class="input-radio">
+        <input type="radio" name="radio-input" value="Service tag *" /><label
+          >Service tag <span class="required">*</span></label
+        >
+        <input type="radio" name="radio-input" value="Serial number" /><label
+          >Serial number</label
+        >
+      </div>
+      <div class="input-text">
+        <input type="text" />
+        <button class="btn btn-primary">Verify</button>
+      </div>
+      <div class="success-msg">
+        <i class="far fa-check-circle">Service tag is valid</i>
+      </div>
+    </form>
+  </body>
+</html>
