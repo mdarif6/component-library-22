@@ -1,0 +1,72 @@
+.inputs {
+  width: 50%;
+  background-color: var(--pd-white-color);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0 -0.313rem 0.188rem -0.188rem var(--pd-black-color),
+    0 0.313rem 0.188rem -0.188rem var(--pd-black-color);
+}
+.input-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text input,
+label {
+  padding: 0.5rem;
+  font-size: large;
+}
+
+.error input[type="password"] {
+  background-color: var(--pd-light-red-color);
+  border: 1px solid var(--pd-danger-color);
+}
+.error .error-msg {
+  color: var(--pd-danger-color);
+}
+
+.validation-error input {
+  border: 0.063rem solid var(--pd-danger-color);
+}
+
+.validation-error .error-msg {
+  color: var(--pd-danger-color);
+}
+
+.validation-success input {
+  border: 1px solid var(--pd-success-color);
+}
+
+.validation-success .success-msg {
+  color: var(--pd-success-color);
+}
+
+.verification {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.verification .input-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.verification .required {
+  color: var(--pd-danger-color);
+}
+
+.verification .success-msg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--pd-success-color);
+}
