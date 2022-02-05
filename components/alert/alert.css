@@ -8,7 +8,7 @@
 }
 
 .alert-primary {
-  background-color: var(--primary-color);
+  background-color: var(--pd-primary-color);
   color: white;
 }
 
@@ -17,22 +17,22 @@
   font-weight: 500;
 }
 .alert-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--pd-secondary-color);
   color: white;
 }
 .alert-information {
-  background-color: var(--information-color);
+  background-color: var(--pd-information-color);
   color: white;
 }
 .alert-success {
-  background-color: var(--success-color);
+  background-color: var(--pd-success-color);
   color: white;
 }
 .alert-error {
   color: white;
-  background-color: var(--error-color);
+  background-color: var(--pd-danger-color);
 }
 .alert-warning {
   color: white;
-  background-color: var(--warning-color);
+  background-color: var(--pd-warning-color);
 }
