@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  position: relative;
+  width: 18.75rem;
+  margin: 2rem auto;
+  background-color: var(--pd-white-color);
+  border: 0.1rem solid var(--pd-primary-color);
+}
+.card-image img {
+  display: flex;
+  width: 100%;
+}
+
+.card-title {
+  padding-left: 0.7rem;
+  padding-top: 0.5rem;
+}
+.card-subtitle {
+  padding: 0 0.7rem;
+  opacity: 0.7;
+}
+.card-desc {
+  padding: 0.7rem;
+  opacity: 0.7;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 0;
+}
+.card-footer .card-btn {
+  padding: 0.2rem;
+}
+.card-foot-btn {
+  color: var(--pd-primary-color);
+  background-color: transparent;
+  font-size: 1rem;
+  border: transparent;
+}
+.card-foot-btn:hover {
+  cursor: pointer;
+  color: var(--pd-dark-primary-color);
+}
+
+.card-footer .card-link {
+  padding: 0.4rem 0 0 1rem;
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--pd-primary-color);
+  font-size: large;
+}
+
+.card-footer .card-link:hover {
+  cursor: pointer;
+  color: var(--pd-dark-primary-color);
+}
+
+/* Card With Badge */
+.card-badge .card-image {
+  display: none;
+}
+
+.badge-on-card {
+  position: absolute;
+  background-color: var(--pd-primary-color);
+  color: var(--pd-white-color);
+  top: 0.8rem;
+  right: -0.875rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Card With Dismiss */
+
+.card-dismiss .card-image {
+  display: none;
+}
+
+.dismiss-on-card {
+  position: absolute;
+  color: var(--pd-primary-color);
+  font-size: xx-large;
+  top: -0.8rem;
+  right: -0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.dismiss-on-card:hover {
+  cursor: pointer;
+  color: var(--pd-dark-primary-color);
+}
+
+/* Card With Text overlay */
+
+.card-textover {
+  position: relative;
+  width: 18.75rem;
+  margin: auto;
+}
+
+.card-textover .card-title {
+  position: absolute;
+  top: 4.5rem;
+  color: var(--pd-white-color);
+}
+
+.card-textover .card-subtitle {
+  position: absolute;
+  top: 7rem;
+  color: var(--pd-white-color);
+  opacity: 1;
+}
+
+/* Card with Text Only */
+
+.card-textonly .card-image {
+  display: none;
+}
+.card-textonly .card-footer {
+  display: none;
+}
+
+/* Horizontal Card */
+.card-horizon {
+  position: relative;
+  width: 18.75rem;
+  margin: auto;
+}
+
+.card-horizon .card-desc {
+  display: none;
+}
+
+.card-horizon .card-image {
+  width: 50%;
+}
+.horizontal-image {
+  display: flex;
+}
+
+/* card Shadow */
+
+.card-shadow {
+  box-shadow: 0 0 0.313rem 0.313rem var(--pd-dark-color);
+}
