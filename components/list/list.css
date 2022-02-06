@@ -14,13 +14,16 @@
   list-style-type: lower-roman;
 }
 
+.description-list-heading {
+  font-weight: bold;
+}
 .stack-list {
   width: 20rem;
 }
 
 .stack-list-item {
   border-bottom: 1px solid gray;
-  padding: 5px;
+  display: flex;
 }
 
 .stack-list-item:last-child {
