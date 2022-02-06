@@ -1,0 +1,114 @@
+@import url(../components/pandaUI.css);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.pd-container > * {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 10px;
+}
+
+.pd-container {
+  display: grid;
+  grid-gap: 20px;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "pd-header pd-header"
+    "pd-aside pd-main"
+    "pd-aside pd-main"
+    "pd-footer pd-footer";
+}
+
+.pd-header {
+  background-color: var(--pd-primary-color);
+  grid-area: pd-header;
+  margin-bottom: auto;
+}
+.pd-aside {
+  grid-area: pd-aside;
+}
+.pd-main {
+  grid-area: pd-main;
+}
+
+.pd-footer {
+  background-color: var(--pd-primary-color);
+  grid-area: pd-footer;
+  margin-top: auto;
+}
+
+.pd-nav-container {
+  display: flex;
+}
+.pd-nav-container div:last-child {
+  margin-left: auto;
+}
+.pd-logo {
+  width: 220px;
+  border-radius: 5px;
+}
+
+.pd-nav-icons {
+  font-size: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.pd-nav-icons .social-icon {
+  color: white;
+}
+.pd-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.main-subheading {
+  width: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* .primary-btn {
+  font-size: 1.5rem;
+  background-color: blueviolet;
+  color: white;
+} */
+/* .primary-btn:hover {
+  cursor: pointer;
+  background-color: rgb(125, 6, 236);
+} */
+/* .secondary-btn {
+  font-size: 1.5rem;
+  color: blueviolet;
+  background-color: white;
+}
+.secondary-btn:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+} */
+
+.pd-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pd-footer-icons {
+  display: flex;
+  font-size: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
