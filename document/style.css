@@ -33,6 +33,7 @@ body {
 }
 .pd-main {
   grid-area: pd-main;
+  /* background-color: gray; */
 }
 
 .pd-footer {
@@ -111,4 +112,10 @@ body {
   font-size: 2rem;
   display: flex;
   gap: 1.5rem;
+}
+
+.pd-component-container {
+  width: 100%;
+  background-color: green;
+  border: 2 px solid red;
 }
