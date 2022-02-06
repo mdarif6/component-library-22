@@ -1,0 +1,24 @@
+.gridtwo-container {
+  width: 30%;
+  margin: auto;
+  display: grid;
+  gap: 0.313rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gridthree-container {
+  width: 30%;
+  margin: auto;
+  display: grid;
+  gap: 0.313rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-child {
+  background-color: var(--pd-primary-color);
+  border: 0.063rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--pd-white-color);
+  padding: 1.25rem;
+}
