@@ -1,0 +1,32 @@
+.square-list {
+  list-style-type: square;
+}
+
+.circle-list {
+  list-style-type: circle;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lower-roman {
+  list-style-type: lower-roman;
+}
+
+.stack-list {
+  width: 20rem;
+}
+
+.stack-list-item {
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+
+.stack-list-item:last-child {
+  border-bottom: none;
+}
+
+.ulist-style-none {
+  list-style-type: none;
+}
