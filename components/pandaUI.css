@@ -6,6 +6,7 @@
 @import url(./input/input.css);
 @import url(./image/image.css);
 @import url(./toast/toast.css);
+@import url(./grid/grid.css);
 :root {
   --pd-default-color: #6e6969;
   --pd-primary-color: #8a29e6;
