@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panda UI</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -15,13 +15,25 @@
     />
   </head>
   <body>
-    <div class="pd-container">
+    <div class="pd-container-home">
       <header class="pd-header">
         <nav class="pd-nav-container">
           <div class="pd-brand">
-            <img class="pd-logo" src="/components/images/Logojpeg.jpg" alt="" />
+            <a href="/document/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
           </div>
-          <div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li>Home</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
             <ul class="pd-nav-icons">
               <li class="pd-nav-icons social-icon">
                 <a class="link" href="https://github.com/mdarif6"
@@ -33,7 +45,7 @@
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </li>
-              <li class="pd-nav-icons social-icon">
+              <li class="pd-nav-icons social-nav-icon">
                 <a class="link" href="https://twitter.com/mdarifdev"
                   ><i class="fab fa-twitter"></i
                 ></a>
@@ -42,8 +54,8 @@
           </div>
         </nav>
       </header>
-      <aside class="pd-aside"></aside>
-      <main class="pd-main">
+
+      <main class="pd-main-home">
         <div class="main-heading">
           Build websites even faster with components on Panda UI
         </div>
@@ -56,7 +68,7 @@
           <a href="/document/alert.html"
             ><button class="btn btn-primary">Get Started</button></a
           >
-          <button class="btn outline-primary">Documentation</button>
+          <button class="btn outline-primary">Git Hub</button>
         </div>
       </main>
       <footer class="pd-footer">
