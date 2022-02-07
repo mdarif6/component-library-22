@@ -44,6 +44,7 @@ body {
 }
 .pd-main {
   grid-area: pd-main;
+  z-index: -1;
   /* background-color: gray; */
 }
 
@@ -74,7 +75,6 @@ body {
   color: white;
 }
 .pd-main {
-  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,25 +95,13 @@ body {
   padding: 1rem;
 }
 
-/* .primary-btn {
-  font-size: 1.5rem;
-  background-color: blueviolet;
-  color: white;
-} */
-/* .primary-btn:hover {
-  cursor: pointer;
-  background-color: rgb(125, 6, 236);
-} */
-/* .secondary-btn {
-  font-size: 1.5rem;
-  color: blueviolet;
-  background-color: white;
+.pd-comp-headings {
+  font-size: 2.5rem;
 }
-.secondary-btn:hover {
-  cursor: pointer;
-  background-color: blueviolet;
-  color: white;
-} */
+.pd-comp-para {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
 
 .pd-footer {
   display: flex;
@@ -129,12 +117,33 @@ body {
 }
 
 .pds {
-  width: 100%;
+  padding: 0 1rem 0 1rem;
+  width: 65%;
   border: 1px solid gray;
+  box-shadow: 0 3px 10px var(--pd-primary-color);
 }
 .aside-link-item {
   padding-top: 2rem;
 }
 .aside-link-item a {
   text-decoration: none;
+}
+
+/* code snipet */
+
+.pd-code-container {
+  /* width: 80%; */
+  /* justify-content: center;
+  box-sizing: border-box; */
+
+  max-height: 300px;
+  /* padding: 1rem 0;
+  margin: auto; */
+
+  margin: 2rem 0;
+  overflow: auto;
+}
+.pd-code-container {
+  /* width: 100%; */
+  /* border: none; */
 }
