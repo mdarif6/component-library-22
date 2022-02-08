@@ -2,20 +2,12 @@
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
+
 .pd-container > * {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 10px;
 }
 
 .pd-container {
-  /* max-width: 1000px; */
-  margin: 0 auto;
   display: grid;
   grid-gap: 20px;
   height: 100vh;
@@ -28,53 +20,23 @@ body {
 }
 
 .pd-header {
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--pd-primary-color);
   grid-area: pd-header;
-  /* margin-bottom: auto; */
+  margin-bottom: auto;
 }
-.pd-aside {
-  /* z-index: -1; */
-  grid-area: pd-aside;
-
-  /* position: fixed; */
-  overflow: auto;
-
-  height: 70vh;
-  /* overflow-y: scroll; */
-}
-.pd-main {
-  grid-area: pd-main;
-  /* z-index: -1; */
-  /* background-color: gray; */
-}
-
-.pd-footer {
-  background-color: var(--pd-primary-color);
-  grid-area: pd-footer;
-  margin-top: auto;
-}
-
 .pd-nav-container {
   display: flex;
 }
-/* .pd-nav-container div:last-child {
-  margin-left: auto;
-} */
 
-/* .pd-nav-container div:nth-child(2) {
-  color: white;
-} */
-
-.pd-header-heading {
-  margin: 3.3rem 0 0 1rem;
+.nav-heading {
+  padding: 3.4rem 0 0 2rem;
   display: flex;
   list-style-type: none;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -83,80 +45,60 @@ body {
   border-radius: 5px;
 }
 
+.pd-nav-icon-container {
+  padding: 0.5rem 1rem 0 39rem;
+}
+
 .pd-nav-icons {
-  margin-left: ;
-  font-size: 1rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.link .sss {
-  /* color: white; */
-}
-/* .pd-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-inline: auto;
-} */
-
-.main-heading {
+.pd-nav-icons .link > i {
   font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+.pd-aside {
+  grid-area: pd-aside;
+  overflow: auto;
+  height: 70vh;
+}
+.pd-main {
+  grid-area: pd-main;
+  padding: 0 4rem 1rem 4rem;
 }
 
-.main-subheading {
-  width: 50%;
-  font-size: 1rem;
-  padding: 1rem;
-}
+/* Main Grid Area */
 
 .pd-comp-headings h3 {
   font-size: 2rem;
+  padding-bottom: 1rem;
 }
 .pd-comp-para {
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding-bottom: 1rem;
+}
+.pd-middle-para {
+  padding: 2rem 0 2rem 0;
 }
 
-.pd-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-heading,
-.pd-footer small {
-  color: var(--pd-white-color);
-}
-.pd-footer-icons {
-  display: flex;
-  font-size: 2rem;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.pds {
-  /* margin: 2.5rem; */
-  padding: 0 1rem 0 1rem;
-  /* width: 65%; */
-  border: 1px solid gray;
+.pd-template {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 5px;
   box-shadow: 0 3px 10px var(--pd-primary-color);
 }
 
-.pds-avt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 2.5rem;
-  width: 65%;
-  border: 1px solid gray;
+/* code snipet */
+
+.pd-template-code {
   box-shadow: 0 3px 10px var(--pd-primary-color);
 }
+.pd-template-code iframe {
+  width: 100%;
+}
+
+/* Aside Grid Area */
 
 .aside-links {
   display: flex;
@@ -182,25 +124,32 @@ body {
   color: white;
 }
 
-/* code snipet */
-
-.pd-code-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  /* width: 80%; */
-  /* justify-content: center;
-  box-sizing: border-box; */
-
-  /* max-height: 300px; */
-  /* padding: 1rem 0;
-  margin: auto; */
-
-  /* margin: 2rem 0; */
-  /* overflow: auto; */
+/* Footer */
+.pd-footer {
+  background-color: var(--pd-primary-color);
+  grid-area: pd-footer;
+  margin-top: auto;
 }
-.pd-code-container {
-  /* width: 100%; */
-  /* border: none; */
+
+.pd-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading,
+.pd-footer small {
+  color: var(--pd-white-color);
+  padding: 0.7rem 0;
+}
+.pd-footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.pd-footer-icons .link > i {
+  font-size: 2rem;
+  align-items: center;
+  justify-items: center;
 }

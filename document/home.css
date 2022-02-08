@@ -57,36 +57,6 @@
   align-items: center;
   justify-items: center;
 }
-.pd-nav-container {
-  display: flex;
-}
-
-.nav-heading {
-  padding: 3.4rem 0 0 2rem;
-  display: flex;
-  list-style-type: none;
-  gap: 1rem;
-  font-size: 1.3rem;
-  color: white;
-}
-
-.pd-logo {
-  width: 220px;
-  border-radius: 5px;
-}
-
-.pd-nav-icon-container {
-  padding: 0.5rem 1rem 0 39rem;
-}
-.pd-nav-icons {
-  display: flex;
-  gap: 1rem;
-}
-.pd-nav-icons .link > i {
-  font-size: 2rem;
-  align-items: center;
-  justify-items: center;
-}
 
 .pd-main-home {
   padding-top: 4rem;
@@ -129,7 +99,6 @@
 }
 .pd-footer-icons {
   display: flex;
-
   gap: 1rem;
 }
 
