@@ -1,0 +1,72 @@
+.toast-container {
+  position: relative;
+  width: 25rem;
+}
+
+.toast {
+  padding: 1.25rem;
+  background-color: var(--pd-white-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.938rem 1.875rem var(--pd-box-shadow-color);
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.toast-success {
+  border-left: 0.625rem solid var(--pd-success-color);
+}
+
+.toast-success i {
+  color: var(--pd-success-color);
+}
+
+.toast-icon i {
+  font-size: 1.25rem;
+}
+
+.toast-text p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.toast-text p:last-child {
+  font-size: 0.75rem;
+  color: var(--pd-default-color);
+}
+
+.toast-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  border: none;
+  font-size: 1.563rem;
+  line-height: 0;
+  /* cross reached up */
+  cursor: pointer;
+  color: var(--pd-default-color);
+}
+
+.toast-error {
+  border-left: 0.5 solid var(--pd-red-color);
+}
+
+.toast-error i {
+  color: var(--pd-red-color);
+}
+
+.toast-info {
+  border-left: 0.5 solid var(--pd-information-color);
+}
+
+.toast-info i {
+  color: var(--pd-information-color);
+}
+
+.toast-warning {
+  border-left: 0.5 solid var(--pd-warning-color);
+}
+
+.toast-warning i {
+  color: var(--pd-warning-color);
+}
