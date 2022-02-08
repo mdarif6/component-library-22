@@ -93,53 +93,74 @@
       </aside>
       <main class="pd-main">
         <div class="pd-comp-headings">
-          <h3>Alert</h3>
+          <h3>Image</h3>
           <p class="pd-comp-para">
-            An alert displays a short, important message in a way that attract
-            user's attention for important information without interrupting the
-            user's flow.
+            Images can be responsive to fit the parent's width, and also can be
+            customised to be round shaped
           </p>
-          <div class="pd-comp-sub-heading"><h4>Alert Examples</h4></div>
+          <div class="pd-comp-sub-heading">
+            <h4>Responsive Image Example</h4>
+          </div>
           <p class="pd-comp-para">
-            Six types of alerts as shown below named as - primary alert,
-            secondary alert, information alert, success alert, error alert and
-            warning alert.
+            You can add class img-responsive to make your image fit the width of
+            container. It's height will get adjusted by keeping the aspect ratio
+            same. If you want to change the aspect ratio, you will have to crop
+            the image.
           </p>
         </div>
 
         <div class="pd-template-container">
           <div class="pd-template">
-            <div class="alert-box alert-primary">A primary alert</div>
-            <div class="alert-box alert-secondary">A secondary alert</div>
-
-            <div class="alert-box alert-information">
-              <span><i class="fas fa-info-circle"></i></span>
-              An information alert
-            </div>
-            <div class="alert-box alert-success">
-              <span><i class="fas fa-check-circle"></i></span>
-              A success alert
-            </div>
-            <div class="alert-box alert-error">
-              <span> <i class="fas fa-exclamation-circle"></i></span>
-              An error alert
-            </div>
-            <div class="alert-box alert-warning">
-              <span><i class="fas fa-exclamation-triangle"></i></span>
-              A warning alert
+            <div>
+              <img
+                class="image-responsive"
+                src="/components/images/Responsive.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
 
-        <p class="pd-comp-para">
-          To use these alerts just use class name alert-box and also add class
-          according to alert type for like alert-primary. (e.g.class="alert-box
-          alert-primary"). You can copy html part from below code snippet too.
-        </p>
         <div class="pd-code-container">
           <div class="pd-template-code">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253EA%2520secondary%2520alert%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-information%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520information%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520success%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520error%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520warning%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522image-responsive%2522%2520src%253D%2522%252Fcomponents%252Fimages%252FResponsive.jpg%2522%2520alt%253D%2522%2522%252F%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading">
+          <h4>Round Image Example</h4>
+        </div>
+
+        <p class="pd-comp-para">
+          You can add class img-round to make your image round shaped.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div>
+              <img
+                class="image-responsive image-round"
+                src="/components/images/Responsive.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cimg%2520class%253D%2522image-responsive%2520image-round%2522%2520src%253D%2522%252Fcomponents%252Fimages%252FResponsive.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E"
               style="
                 height: auto;
                 border: 0;

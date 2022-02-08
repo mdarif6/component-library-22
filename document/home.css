@@ -39,7 +39,10 @@
   font-size: 1.3rem;
   color: white;
 }
-
+.nav-heading a {
+  text-decoration: none;
+  color: white;
+}
 .pd-logo {
   width: 220px;
   border-radius: 5px;

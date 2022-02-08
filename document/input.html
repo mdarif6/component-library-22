@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/document/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/document/index.html">Home</a></li>
+              <li><a href="/document/alert.html">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <ul class="pd-nav-icons">
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://github.com/mdarif6"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-nav-icon">
+                <a class="link" href="https://twitter.com/mdarifdev"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Input</h3>
+          <p class="pd-comp-para">
+            Inputs are necessary for user interaction with the website. Inputs
+            are used to take information from the user, and then save the data
+            to the server, accordingly.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Basic Label Inputs</h4></div>
+          <p class="pd-comp-para">
+            Basic label Inputs have a label present at the top of the input
+            field. And can be used to enter details or Credential. They can be
+            customized to show error error-message, and change color
+            accordingly.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <form class="inputs">
+              <div class="input-text">
+                <label>First name:</label>
+                <input type="text" />
+              </div>
+              <div class="input-text">
+                <label>Last name:</label>
+                <input type="text" />
+              </div>
+              <div class="input-text">
+                <label>Password:</label>
+                <input type="password" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522inputs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EFirst%2520name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253ELast%2520name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EPassword%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%2520"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading">
+          <h4>Label Inputs With mandatory field</h4>
+        </div>
+        <p class="pd-comp-para">
+          Basic label Inputs can be customized to by using asterisk or a cloured
+          field to show that this filed is mandatory.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <form class="inputs">
+              <div class="input-text error">
+                <label>Username *</label>
+                <input type="text" />
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="input-text error">
+                <label class="error-msg">Password *</label>
+                <input type="password" />
+                <div class="error-msg">Password is a required field</div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522inputs%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2520error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EUsername%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-msg%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2520error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522error-msg%2522%253EPassword%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-msg%2522%253EPassword%2520is%2520a%2520required%2520field%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fform%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading">
+          <h4>Label Inputs With Error or Success Message</h4>
+        </div>
+        <p class="pd-comp-para">
+          Basic label Inputs can be customized to show error error-message
+          success-msg, and change color accordingly.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <form class="inputs">
+              <div class="input-text validation-error">
+                <label>Password *</label>
+                <input type="password" />
+                <div class="error-msg">Your Password is too short</div>
+              </div>
+
+              <div class="input-text validation-success">
+                <label class="error-msg">Password </label>
+                <input type="password" />
+                <div class="success-msg">Your Password is strong</div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522inputs%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2520validation-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EPassword%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-msg%2522%253EYour%2520Password%2520is%2520too%2520short%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2520validation-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522error-msg%2522%253EPassword%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success-msg%2522%253EYour%2520Password%2520is%2520strong%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fform%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading">
+          <h4>Label Inputs With radio button for Verification</h4>
+        </div>
+        <p class="pd-comp-para">
+          Label Inputs can be used with radio button and buttons to verify the
+          information provided in text filed.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <form class="inputs verification">
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  name="radio-input"
+                  value="Service tag *"
+                /><label>Service tag <span class="required">*</span></label>
+                <input
+                  type="radio"
+                  name="radio-input"
+                  value="Serial number"
+                /><label>Serial number</label>
+              </div>
+              <div class="input-text">
+                <input type="text" />
+                <button class="btn btn-primary">Verify</button>
+              </div>
+              <div class="success-msg">
+                <i class="far fa-check-circle">Service tag is valid</i>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522inputs%2520verification%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-input%2522%2520value%253D%2522Service%2520tag%2520*%2522%2520%252F%253E%253Clabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EService%2520tag%2520%253Cspan%2520class%253D%2522required%2522%253E*%253C%252Fspan%253E%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-input%2522%2520value%253D%2522Serial%2520number%2522%2520%252F%253E%253Clabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253ESerial%2520number%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EVerify%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success-msg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2522%253EService%2520tag%2520is%2520valid%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fform%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
