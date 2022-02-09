@@ -135,7 +135,7 @@
 
 /* Floating Action Button */
 
-.fab {
+.floating-btn {
   width: 4.375rem;
   height: 4.375rem;
   background-color: var(--pd-danger-color);
@@ -146,7 +146,7 @@
   text-align: center;
 }
 
-.fab:hover {
+.floating-btn:hover {
   box-shadow: 0 0.375rem 0.875rem 0 var(--pd-box-shadow-color);
   transform: scale(1.05);
   background-color: var(--pd-red-color);
