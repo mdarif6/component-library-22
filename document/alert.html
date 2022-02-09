@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/document/alert.html">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <ul class="pd-nav-icons">
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://github.com/mdarif6"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-nav-icon">
+                <a class="link" href="https://twitter.com/mdarifdev"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Alert</h3>
+          <p class="pd-comp-para">
+            An alert displays a short, important message in a way that attract
+            user's attention for important information without interrupting the
+            user's flow.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Alert Examples</h4></div>
+          <p class="pd-comp-para">
+            Six types of alerts as shown below named as - primary alert,
+            secondary alert, information alert, success alert, error alert and
+            warning alert.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="alert-box alert-primary">A primary alert</div>
+            <div class="alert-box alert-secondary">A secondary alert</div>
+
+            <div class="alert-box alert-information">
+              <span><i class="fas fa-info-circle"></i></span>
+              An information alert
+            </div>
+            <div class="alert-box alert-success">
+              <span><i class="fas fa-check-circle"></i></span>
+              A success alert
+            </div>
+            <div class="alert-box alert-error">
+              <span> <i class="fas fa-exclamation-circle"></i></span>
+              An error alert
+            </div>
+            <div class="alert-box alert-warning">
+              <span><i class="fas fa-exclamation-triangle"></i></span>
+              A warning alert
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          To use these alerts just use class name alert-box and also add class
+          according to alert type for like alert-primary. (e.g.class="alert-box
+          alert-primary"). You can copy html part from below code snippet too.
+        </p>
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253EA%2520secondary%2520alert%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-information%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520information%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520success%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520error%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520warning%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

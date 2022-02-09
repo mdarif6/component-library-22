@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import url(./components/pandaUI.css);
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.pd-container-home > * {
+  padding: 10px;
+}
+
+.pd-container-home {
+  display: grid;
+  grid-gap: 20px;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "pd-header pd-header"
+    "pd-main-home pd-main-home"
+    "pd-footer pd-footer";
+}
+
+.pd-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--pd-primary-color);
+  grid-area: pd-header;
+  margin-bottom: auto;
+}
+
+.pd-nav-container {
+  display: flex;
+}
+
+.nav-heading {
+  padding: 1.9rem 0 0 2rem;
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.nav-heading a {
+  text-decoration: none;
+  color: var(--pd-white-color);
+}
+.pd-logo {
+  width: 220px;
+  border-radius: 5px;
+}
+
+.pd-nav-icon-container {
+  padding: 1.7rem 1rem 0 45rem;
+}
+.pd-nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+.pd-nav-icons .link > i {
+  font-size: 1.7rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--pd-white-color);
+}
+
+.pd-main-home {
+  padding-top: 4rem;
+  grid-area: pd-main-home;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.main-subheading {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.main-button {
+  text-align: center;
+}
+.pd-footer {
+  background-color: var(--pd-primary-color);
+  grid-area: pd-footer;
+  margin-top: auto;
+}
+
+.pd-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading,
+.pd-footer small {
+  color: var(--pd-white-color);
+  padding: 0.7rem 0;
+}
+.pd-footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.pd-footer-icons .link > i {
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--pd-white-color);
+}

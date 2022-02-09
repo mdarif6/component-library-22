@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import url(../components/pandaUI.css);
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.pd-container > * {
+  padding: 10px;
+}
+
+.pd-container {
+  display: grid;
+  grid-gap: 10px;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "pd-header pd-header"
+    "pd-aside pd-main"
+    "pd-aside pd-main"
+    "pd-footer pd-footer";
+}
+
+.pd-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--pd-primary-color);
+  grid-area: pd-header;
+  margin-bottom: auto;
+}
+.pd-nav-container {
+  display: flex;
+}
+
+.nav-heading {
+  padding: 1.9rem 0 0 2rem;
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.nav-heading a {
+  text-decoration: none;
+  color: var(--pd-white-color);
+}
+
+.pd-logo {
+  width: 220px;
+  border-radius: 5px;
+}
+
+.pd-nav-icon-container {
+  padding: 1.7rem 1rem 0 45rem;
+}
+
+.pd-nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.pd-nav-icons .link > i {
+  font-size: 1.7rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--pd-white-color);
+}
+.pd-aside {
+  grid-area: pd-aside;
+  width: 15vw;
+  overflow: auto;
+  height: 85vh;
+  padding-bottom: 4rem;
+}
+.pd-main {
+  grid-area: pd-main;
+  padding: 0 4rem 1rem 4rem;
+}
+
+/* Aside Grid Area */
+
+.aside-title {
+  padding: 0 1rem 0 1rem;
+}
+.aside-links {
+  display: flex;
+
+  justify-content: flex-start;
+  flex-direction: column;
+
+  list-style-type: none;
+}
+.aside-link-item {
+  padding: 0.9rem;
+}
+.link-active {
+  font-weight: bold;
+}
+.aside-link-item a {
+  color: var(--pd-black-color);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.aside-link-item a:hover:not(active) {
+  background-color: var(--pd-primary-color);
+  border-radius: 5px;
+  color: var(--pd-white-color);
+}
+
+/* Main Grid Area */
+
+.pd-comp-headings h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.pd-comp-sub-heading {
+  font-size: 1.3rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.pd-comp-para {
+  font-size: 1rem;
+}
+.pd-middle-para {
+  font-size: 1.2rem;
+}
+
+.pd-template {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--pd-primary-color);
+}
+
+.pd-template-container,
+.pd-code-container {
+  padding: 2rem 0 2rem 0;
+}
+
+.pd-list-template {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pd-toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* temp for avatar - to show in a row */
+.pd-template-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--pd-primary-color);
+}
+.pd-template-avatar .avatar-gp {
+  justify-content: center;
+  align-items: center;
+}
+
+.pd-input-container {
+  display: flex;
+  justify-content: center;
+}
+/* code snipet */
+
+/* .pd-code-container {
+  padding-bottom: 2rem;
+} */
+
+.pd-template-code {
+  box-shadow: 0 3px 10px var(--pd-primary-color);
+}
+.pd-template-code iframe {
+  width: 100%;
+}
+
+/* Footer */
+.pd-footer {
+  background-color: var(--pd-primary-color);
+  grid-area: pd-footer;
+  margin-top: auto;
+}
+
+.pd-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading,
+.pd-footer small {
+  color: var(--pd-white-color);
+  padding: 0.7rem 0;
+}
+.pd-footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.pd-footer-icons .link > i {
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--pd-white-color);
+}

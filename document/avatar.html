@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/document/alert.html">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <ul class="pd-nav-icons">
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://github.com/mdarif6"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-nav-icon">
+                <a class="link" href="https://twitter.com/mdarifdev"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Avatar</h3>
+          <p class="pd-comp-para">
+            Avatar can be used to show user's profile picture on profile
+            information page, on navigation bar, in blogs grid items.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Profile Avatar</h4></div>
+          <p class="pd-comp-para">
+            Four types of Avatar are shown below having different sizes.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template-avatar">
+            <div class="avatar avatar-xsm">
+              <img src="/components/images/Panda.jpg" />
+            </div>
+            <div class="avatar avatar-sm">
+              <img src="/components/images/Panda.jpg" />
+            </div>
+            <div class="avatar avatar-md">
+              <img src="/components/images/Panda.jpg" />
+            </div>
+            <div class="avatar avatar-lg">
+              <img src="/components/images/Panda.jpg" />
+            </div>
+          </div>
+        </div>
+        <p class="pd-comp-para">
+          To use these avatar just use class name avatar and also add class
+          according to avatar size, like avatar-sm for small one.
+          (e.g.class="avatar avatar-sm"). You can copy html part from below code
+          snippet too.
+        </p>
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xsm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="pd-comp-sub-heading"><h4>Text Avatar</h4></div>
+        <p class="pd-comp-para">
+          Four types text Avatar are shown below having different sizes.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template-avatar">
+            <div class="avatar avatar-xsm avt-text">XSM</div>
+            <div class="avatar avatar-sm avt-text">SM</div>
+            <div class="avatar avatar-md avt-text">MD</div>
+            <div class="avatar avatar-lg avt-text">LG</div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          To use these avatar just use class name avatar-text and also add class
+          according to avatar size, like avatar-sm for small one.
+          (e.g.class="avatar-xsm avatar-text"). You can copy html part from
+          below code snippet too.
+        </p>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xsm%2520avt-text%2522%253EXSM%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avt-text%2522%253ESM%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avt-text%2522%253EMD%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avt-text%2522%253ELG%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Group Avatar</h4></div>
+        <p class="pd-comp-para">
+          Four types of Group Avatar are shown below having different sizes.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template-avatar">
+            <div class="avatar-gp">
+              <div class="avatar-hid">+5</div>
+              <div class="avatar avatar-xsm">
+                <img src="/components/images/Panda.jpg" />
+              </div>
+              <div class="avatar avatar-sm">
+                <img src="/components/images/Panda.jpg" />
+              </div>
+              <div class="avatar avatar-md">
+                <img src="/components/images/Panda.jpg" />
+              </div>
+              <div class="avatar avatar-lg">
+                <img src="/components/images/Panda.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          To use these avatar just use class name avatar-gp in a container You
+          can copy html part from below code snippet too.
+        </p>
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-gp%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-hid%2522%253E%252B5%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xsm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252FPanda.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

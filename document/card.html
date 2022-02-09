@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/document/alert.html">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <ul class="pd-nav-icons">
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://github.com/mdarif6"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-icon">
+                <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="pd-nav-icons social-nav-icon">
+                <a class="link" href="https://twitter.com/mdarifdev"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Card</h3>
+          <p class="pd-comp-para">
+            Cards are surfaces that display content and actions on a single
+            topic.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Card with Badge</h4></div>
+          <p class="pd-comp-para">
+            Badge presents on card with Title, Text and icons.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-badge">
+              <div class="badge-on-card">Lorem Ipsum</div>
+              <div class="card-image">
+                <img src="/components/images/card.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <h5 class="card-subtitle">by Richard McClintock</h5>
+                <p class="card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          To use the Card Component put card-description, card-button, card
+          title, inside a div with class card.
+        </p>
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-on-card%2522%253ELorem%2520Ipsum%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520amet%252C%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Card with Dismiss</h4></div>
+        <p class="pd-comp-para">Close Button will display on card.</p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-dismiss">
+              <div class="dismiss-on-card"><i class="fas fa-times"></i></div>
+              <div class="card-image">
+                <img src="/components/images/card.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <h5 class="card-subtitle">by Richard McClintock</h5>
+                <p class="card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-on-card%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520amet%252C%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Card with Text Overlay</h4></div>
+        <p class="pd-comp-para">Text will apper on the image.</p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-textover">
+              <div class="card-image">
+                <img src="/components/images/card.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <h5 class="card-subtitle">by Richard McClintock</h5>
+                <p class="card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-textover%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%2520amet%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Text Only Card</h4></div>
+        <p class="pd-comp-para">Only Text will be available on the card.</p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-textonly">
+              <div class="card-image">
+                <img src="/components/images/card.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <h5 class="card-subtitle">by Richard McClintock</h5>
+                <p class="card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-textonly%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%2520amet%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Vertical/Horizontal Card</h4></div>
+        <p class="pd-comp-para">Below is showing a Horizontal Card.</p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-horizon">
+              <div class="horizontal-image">
+                <div class="card-image">
+                  <img src="/components/images/card.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Lorem Ipsum</h4>
+                  <h5 class="card-subtitle">by Richard McClintock</h5>
+                  <p class="card-desc">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                    amet, consectetur, adipisci velit...
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-horizon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520amet%252C%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Card with Shadow</h4></div>
+        <p class="pd-comp-para">You will see a shadow of the Card.</p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="card card-shadow">
+              <div class="card-image">
+                <img src="/components/images/card.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <h5 class="card-subtitle">by Richard McClintock</h5>
+                <p class="card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn">
+                  <button class="card-foot-btn">READ</button>
+                  <button class="card-foot-btn">BOOKMARK</button>
+                </div>
+                <div class="card-link">
+                  <span><i class="far fa-heart"></i></span>
+                  <span> <i class="fas fa-share-alt"></i></span>
+                  <span><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fcomponents%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253Eby%2520Richard%2520McClintock%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Neque%2520porro%2520quisquam%2520est%2520qui%2520dolorem%2520ipsum%2520quia%2520dolor%2520sit%2520amet%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520consectetur%252C%2520adipisci%2520velit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-foot-btn%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
