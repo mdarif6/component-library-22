@@ -1,6 +1,6 @@
+@import url(./components/pandaUI.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-@import url(./components/pandaUI.css);
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -12,13 +12,19 @@
 
 .pd-container-home {
   display: grid;
-  grid-gap: 20px;
   height: 100vh;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "pd-header pd-header"
     "pd-main-home pd-main-home"
     "pd-footer pd-footer";
+}
+
+@media only screen and (max-width: 480px) {
+  .pd-nav-container {
+    display: flex;
+    align-items: stretch;
+  }
 }
 
 .pd-header {
@@ -32,10 +38,12 @@
 
 .pd-nav-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-heading {
-  padding: 1.9rem 0 0 2rem;
   display: flex;
   list-style-type: none;
   gap: 1rem;
@@ -50,9 +58,12 @@
   border-radius: 5px;
 }
 
-.pd-nav-icon-container {
-  padding: 1.7rem 1rem 0 45rem;
+.pd-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 .pd-nav-icons {
   display: flex;
   gap: 1rem;

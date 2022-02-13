@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./document/images/panda.png"
+      type="image/png"
+      sizes="16x16"
+    />
     <title>Panda UI</title>
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/document/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -26,31 +32,34 @@
                 alt=""
               />
             </a>
+            <div class="pd-header-heading">
+              <ul class="nav-heading">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/document/alert.html">Documentation</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="pd-header-heading">
-            <ul class="nav-heading">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/document/alert.html">Documentation</a></li>
-            </ul>
-          </div>
+
           <div class="pd-nav-icon-container">
-            <ul class="pd-nav-icons">
-              <li class="pd-nav-icons social-icon">
-                <a class="link" href="https://github.com/mdarif6"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="pd-nav-icons social-icon">
-                <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li class="pd-nav-icons social-nav-icon">
-                <a class="link" href="https://twitter.com/mdarifdev"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-            </ul>
+            <div>
+              <ul class="pd-nav-icons">
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://github.com/mdarif6"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-nav-icon">
+                  <a class="link" href="https://twitter.com/mdarifdev"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -70,6 +79,23 @@
           <a href="https://github.com/mdarif6"
             ><button class="btn outline-primary">Git Hub</button></a
           >
+        </div>
+        <div>
+          <div class="main-heading">Installation</div>
+          <div class="main-subheading">
+            Copy and paste the code in the head tag of your html document. So
+            that you can style your components by just adding class names to
+            your html elements.
+          </div>
+
+          <div class="pd-template-code-home">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fpandaui.netlify.app%252Fcomponents%252Fpandaui.css%2522%253E%250A%250A"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
         </div>
       </main>
       <footer class="pd-footer">
