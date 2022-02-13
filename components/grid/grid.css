@@ -1,5 +1,4 @@
 .gridtwo-container {
-  width: 30%;
   margin: auto;
   display: grid;
   gap: 0.313rem;
@@ -7,7 +6,6 @@
 }
 
 .gridthree-container {
-  width: 30%;
   margin: auto;
   display: grid;
   gap: 0.313rem;

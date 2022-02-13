@@ -38,7 +38,6 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-
   border: none;
   font-size: 1.563rem;
   line-height: 0;
@@ -48,7 +47,7 @@
 }
 
 .toast-error {
-  border-left: 0.5 solid var(--pd-red-color);
+  border-left: 0.625rem solid var(--pd-red-color);
 }
 
 .toast-error i {
@@ -56,7 +55,7 @@
 }
 
 .toast-info {
-  border-left: 0.5solid var(--pd-information-color);
+  border-left: 0.625rem solid var(--pd-information-color);
 }
 
 .toast-info i {
@@ -64,7 +63,7 @@
 }
 
 .toast-warning {
-  border-left: 0.5 solid var(--pd-warning-color);
+  border-left: 0.625rem solid var(--pd-warning-color);
 }
 
 .toast-warning i {
