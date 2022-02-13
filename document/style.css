@@ -93,6 +93,7 @@
 /* Aside Grid Area */
 
 .aside-title {
+  font-size: 1rem;
   padding: 0 1rem 0 1rem;
 }
 .aside-links {
@@ -130,12 +131,12 @@
 }
 
 .pd-comp-headings h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
 .pd-comp-sub-heading {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1rem 0 0.5rem 0;
 }
 .pd-comp-para {
