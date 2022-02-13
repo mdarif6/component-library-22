@@ -1,20 +1,21 @@
+@import url(../components/pandaUI.css);
+@import url(../home.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-@import url(../components/pandaUI.css);
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 .pd-container > * {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .pd-container {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0.625rem;
   height: 100vh;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 10% 1fr;
   grid-template-areas:
     "pd-header pd-header"
     "pd-aside pd-main"
@@ -22,6 +23,18 @@
     "pd-footer pd-footer";
 }
 
+@media only screen and (max-width: 480px) {
+  .pd-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pd-header"
+      "pd-aside"
+      "pd-main"
+      "pd-footer";
+  }
+}
+
+/* Header */
 .pd-header {
   top: 0;
   left: 0;
@@ -32,10 +45,12 @@
 }
 .pd-nav-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-heading {
-  padding: 1.9rem 0 0 2rem;
   display: flex;
   list-style-type: none;
   gap: 1rem;
@@ -47,12 +62,14 @@
 }
 
 .pd-logo {
-  width: 220px;
-  border-radius: 5px;
+  width: 13.75rem;
+  border-radius: 0.313rem;
 }
 
-.pd-nav-icon-container {
-  padding: 1.7rem 1rem 0 45rem;
+.pd-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .pd-nav-icons {
@@ -69,18 +86,14 @@
 .pd-aside {
   grid-area: pd-aside;
   width: 15vw;
-  overflow: auto;
-  height: 85vh;
+
   padding-bottom: 4rem;
-}
-.pd-main {
-  grid-area: pd-main;
-  padding: 0 4rem 1rem 4rem;
 }
 
 /* Aside Grid Area */
 
 .aside-title {
+  font-size: 1rem;
   padding: 0 1rem 0 1rem;
 }
 .aside-links {
@@ -106,19 +119,24 @@
 
 .aside-link-item a:hover:not(active) {
   background-color: var(--pd-primary-color);
-  border-radius: 5px;
+  border-radius: 0.313rem;
   color: var(--pd-white-color);
 }
 
 /* Main Grid Area */
 
+.pd-main {
+  grid-area: pd-main;
+  padding: 0 4rem 1rem 4rem;
+}
+
 .pd-comp-headings h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
 .pd-comp-sub-heading {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1rem 0 0.5rem 0;
 }
 .pd-comp-para {
@@ -130,8 +148,8 @@
 
 .pd-template {
   padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px var(--pd-primary-color);
+  border-radius: 0.313rem;
+  box-shadow: 0 0.188rem 0.625rem var(--pd-primary-color);
 }
 
 .pd-template-container,
@@ -141,11 +159,13 @@
 
 .pd-list-template {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .pd-toast-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
@@ -153,12 +173,13 @@
 /* temp for avatar - to show in a row */
 .pd-template-avatar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px var(--pd-primary-color);
+  border-radius: 0.313rem;
+  box-shadow: 0 0.188rem 0.625rem var(--pd-primary-color);
 }
 .pd-template-avatar .avatar-gp {
   justify-content: center;
@@ -167,18 +188,19 @@
 
 .pd-input-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 /* code snipet */
 
-/* .pd-code-container {
-  padding-bottom: 2rem;
-} */
-
 .pd-template-code {
-  box-shadow: 0 3px 10px var(--pd-primary-color);
+  box-shadow: 0 0.188rem 0.625rem var(--pd-primary-color);
 }
+
 .pd-template-code iframe {
+  width: 100%;
+}
+.pd-template-code-home iframe {
   width: 100%;
 }
 
