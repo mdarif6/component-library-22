@@ -164,6 +164,7 @@
 }
 
 .pd-toast-container {
+  gap: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
