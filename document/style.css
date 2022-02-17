@@ -14,24 +14,7 @@
 .pd-container {
   display: grid;
   grid-gap: 0.625rem;
-  height: 100vh;
-  grid-template-columns: 10% 1fr;
-  grid-template-areas:
-    "pd-header pd-header"
-    "pd-aside pd-main"
-    "pd-aside pd-main"
-    "pd-footer pd-footer";
-}
-
-@media only screen and (max-width: 480px) {
-  .pd-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "pd-header"
-      "pd-aside"
-      "pd-main"
-      "pd-footer";
-  }
+  grid-template-columns: minmax(100px, auto);
 }
 
 /* Header */
@@ -40,36 +23,19 @@
   left: 0;
   width: 100%;
   background-color: var(--pd-primary-color);
-  grid-area: pd-header;
   margin-bottom: auto;
-}
-.pd-nav-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .nav-heading {
-  display: flex;
   list-style-type: none;
-  gap: 1rem;
   font-size: 1.3rem;
-}
-.nav-heading a {
-  text-decoration: none;
-  color: var(--pd-white-color);
 }
 
 .pd-logo {
-  width: 13.75rem;
+  width: 10rem;
   border-radius: 0.313rem;
-}
-
-.pd-brand {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .pd-nav-icons {
@@ -83,10 +49,14 @@
   justify-items: center;
   color: var(--pd-white-color);
 }
-.pd-aside {
-  grid-area: pd-aside;
-  width: 15vw;
 
+#burger-menu {
+  display: none;
+}
+
+.pd-aside {
+  grid-column: 1/2;
+  grid-row: 2/3;
   padding-bottom: 4rem;
 }
 
@@ -126,7 +96,8 @@
 /* Main Grid Area */
 
 .pd-main {
-  grid-area: pd-main;
+  grid-column: 2/3;
+  grid-row: 2/3;
   padding: 0 4rem 1rem 4rem;
 }
 
@@ -192,6 +163,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 /* code snipet */
 
 .pd-template-code {
@@ -201,6 +173,7 @@
 .pd-template-code iframe {
   width: 100%;
 }
+
 .pd-template-code-home iframe {
   width: 100%;
 }
@@ -208,7 +181,8 @@
 /* Footer */
 .pd-footer {
   background-color: var(--pd-primary-color);
-  grid-area: pd-footer;
+  grid-column: 1/3;
+  grid-row: 3/4;
   margin-top: auto;
 }
 
@@ -235,4 +209,41 @@
   align-items: center;
   justify-items: center;
   color: var(--pd-white-color);
+}
+
+@media only screen and (max-width: 700px) {
+  .pd-main {
+    grid-column: 1/3;
+  }
+  #burger-menu {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: block;
+    color: var(--pd-white-color);
+    padding: 0 1rem;
+  }
+
+  .pd-asidebar {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+  }
+  .pd-nav-icons {
+    display: none;
+  }
+  .aside-title,
+  .aside-link-item a {
+    color: var(--pd-primary-color);
+    font-size: 1.2rem;
+  }
+
+  .nav-heading {
+    list-style-type: none;
+    font-size: 1.2rem;
+  }
+  .pd-logo {
+    width: 9rem;
+  }
 }
