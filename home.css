@@ -119,3 +119,14 @@
   justify-items: center;
   color: var(--pd-white-color);
 }
+
+.pd-install-link {
+  margin: auto;
+  width: 100%;
+}
+.pd-template-code-home {
+  width: 100%;
+}
+.pd-template-code-home iframe {
+  width: 100%;
+}
