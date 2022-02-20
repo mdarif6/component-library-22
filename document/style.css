@@ -225,7 +225,6 @@
     position: absolute;
     right: 0;
     z-index: 1;
-    height: 100vh;
   }
   .pd-nav-icons {
     display: none;
@@ -239,7 +238,7 @@
   .aside-link-item a {
     color: var(--pd-primary-color);
     border-radius: 0.625rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .nav-heading {
