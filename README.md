@@ -2,7 +2,7 @@
 
 ![Logo](/document/images/LogoScreenShot.jpg)
 
-A component Library for a quick creation of websites built using only HTML and CSS with pre-defined styled classes.
+A component Library for a quick creation of websites built using only HTML and CSS with pre-defined styled classes. And it is responsive too.
 
 # Screenshots
 
@@ -22,6 +22,8 @@ A component Library for a quick creation of websites built using only HTML and C
 
 Ten Components created in PANDA UI Library.
 
+### (P0)
+
 - Alert
 - Avatar
 - Badge
@@ -29,6 +31,9 @@ Ten Components created in PANDA UI Library.
 - Card
 - Image
 - Input
+
+### (P1)
+
 - List
 - Toast
 - Simplified Grid
