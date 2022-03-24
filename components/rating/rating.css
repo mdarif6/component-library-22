@@ -1,0 +1,16 @@
+.rating-icon {
+  color: var(--pd-default-color);
+}
+
+.star-input:enabled + .rating-icon:hover {
+  color: var(--pd-gold-color);
+  cursor: pointer;
+}
+
+.star-input {
+  opacity: 0;
+}
+
+.star-input:checked + .rating-icon {
+  color: var(--pd-gold-color);
+}
