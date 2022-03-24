@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../document/images/panda.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Rating</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a class="pd-active" href="/document/alert.html"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <div>
+              <ul class="pd-nav-icons">
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://github.com/mdarif6"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-nav-icon">
+                  <a class="link" href="https://twitter.com/mdarifdev"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+              <i id="burger-menu" class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/rating.html">Rating</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Rating</h3>
+          <p class="pd-comp-para">
+            A star rating is a rating question that gives people a product or
+            service rate with several stars. The number of stars can range from
+            1 to 5 stars. It permits users to rank attributes on a scale
+            represented with stars, instead of radio buttons or checkboxes.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Rating Examples</h4></div>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="rating-star-container">
+              <label>
+                <input class="star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-icon"></i>
+              </label>
+              <label>
+                <input class="star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-icon"></i>
+              </label>
+              <label>
+                <input class="star-input" type="checkbox" checked disabled />
+                <i class="fas fa-star rating-icon"></i>
+              </label>
+              <label>
+                <input class="star-input" type="checkbox" disabled />
+                <i class="fas fa-star rating-icon"></i>
+              </label>
+              <label>
+                <input class="star-input" type="checkbox" disabled />
+                <i class="fas fa-star rating-icon"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          To use these ratings you can copy html part from below code snippet.
+        </p>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-star-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-headings">
+          <h3>Live Example</h3>
+          <p class="pd-comp-para">
+            Giving ratings will look like below Example. Select star and submit
+            the button.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <form class="rating-form">
+              <h4>Give Ratings</h4>
+              <div class="rating-star-container">
+                <label>
+                  <input class="star-input" type="checkbox" />
+                  <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-input" type="checkbox" />
+                  <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-input" type="checkbox" />
+                  <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-input" type="checkbox" />
+                  <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-input" type="checkbox" />
+                  <i class="fas fa-star rating-icon"></i>
+                </label>
+              </div>
+              <button class="btn btn-primary">Submit</button>
+            </form>
+            <div class="rating-number-output"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+    <script src="/document/rating.js"></script>
+    <script src="/document/burger_menu.js"></script>
+  </body>
+</html>
