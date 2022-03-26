@@ -9,6 +9,7 @@
 @import url(./toast/toast.css);
 @import url(./grid/grid.css);
 @import url(./rating/rating.css);
+@import url(./navigation/navigation.css);
 :root {
   --pd-default-color: #6e6969;
   --pd-primary-color: #8a29e6;
@@ -32,7 +33,7 @@
   --pd-online-color: #17df17;
   --pd-offline-color: #d6b0b0;
   --pd-away-color: #ffa500;
-  --pd-gold-color:#ffd700;
+  --pd-gold-color: #ffd700;
   --pd-busy-color: #f32020;
   --pd-box-shadow-color: #c4a8a8;
 }
