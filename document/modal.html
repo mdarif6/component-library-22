@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../document/images/panda.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a class="pd-active" href="/document/alert.html"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <div>
+              <ul class="pd-nav-icons">
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://github.com/mdarif6"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-nav-icon">
+                  <a class="link" href="https://twitter.com/mdarifdev"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+              <i id="burger-menu" class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/modal.html">Modal</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/navigation.html">Navigation</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/rating.html">Rating</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Modal</h3>
+          <p class="pd-comp-para">
+            A modal is a dialog box/popup window that is displayed on top of the
+            current page. Modals are positioned and remove/close only with close
+            button on pop up.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Modal Example</h4></div>
+          <p class="pd-comp-para">
+            A modal can be shown as a popup as below after click, and to close
+            it need to click on close button as in this case Go Back.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="pd-modal-example-middle">
+              <div class="modal-content">
+                <button type="button" class="pd-modal-example-close"></button>
+                <div class="text-container">
+                  <div class="text-container-title">
+                    <h4>You got an exclusive offers</h4>
+                  </div>
+                  <div class="text-container-desc">
+                    <p>
+                      Next 3 hours only! <br />Shop our limited selection of
+                      last season’s styles from xyz@email.com
+                    </p>
+                  </div>
+                  <div class="pd-btn-container">
+                    <a class="btn outline-primary pd-modal-example-back"
+                      >Go Back</a
+                    >
+                    <a class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">Below is the HTML code given.</p>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522pd-modal-example-middle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522pd-modal-example-close%2522%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EYou%2520got%2520an%2520exclusive%2520offers%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Next%25203%2520hours%2520only%21%2520%253Cbr%2520%252F%253EShop%2520our%2520limited%2520selection%2520of%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520last%2520season%25E2%2580%2599s%2520styles%2520from%2520xyz%2540email.com%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520outline-primary%2520pd-modal-example-back%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EGo%2520Back%253C%252Fa%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2522%253EShop%2520Now%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="pd-comp-sub-heading"><h4>Live Example of Modal</h4></div>
+        <p class="pd-comp-para">
+          When Clicks on click me button- A pop will come with the information
+          you want to show. It also contains two buttons to go back and to
+          navigate on other page/content.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div id="Modal">
+              <div class="component-display-container">
+                <button class="btn btn-primary pd-modal-example">
+                  Click me
+                </button>
+              </div>
+              <div class="modal-middle pd-modal-example-middle">
+                <div class="modal-content vertical-middle display-flex-items">
+                  <button
+                    type="button"
+                    class="btn-close pd-modal-example-close"
+                  ></button>
+                  <div class="text-container">
+                    <div class="text-container-title">
+                      <h4>You got an exclusive offers</h4>
+                    </div>
+                    <div class="text-container-desc">
+                      <p>
+                        Next 3 hours only! <br />Shop our limited selection of
+                        last season’s styles from xyz@email.com
+                      </p>
+                    </div>
+                    <div class="pd-btn-container">
+                      <a class="btn outline-primary pd-modal-example-back"
+                        >Go Back</a
+                      >
+                      <a class="btn btn-primary">Shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+    <script src="/document/burger_menu.js"></script>
+    <script src="/document/modal.js"></script>
+  </body>
+</html>
