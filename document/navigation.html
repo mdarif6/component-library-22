@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../document/images/panda.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pd-container">
+      <header class="pd-header">
+        <nav class="pd-nav-container">
+          <div class="pd-brand">
+            <a href="/index.html"
+              ><img
+                class="pd-logo"
+                src="/components/images/Logojpeg.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pd-header-heading">
+            <ul class="nav-heading">
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a class="pd-active" href="/document/alert.html"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pd-nav-icon-container">
+            <div>
+              <ul class="pd-nav-icons">
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://github.com/mdarif6"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-icon">
+                  <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="pd-nav-icons social-nav-icon">
+                  <a class="link" href="https://twitter.com/mdarifdev"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+              <i id="burger-menu" class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="pd-aside">
+        <div class="pd-asidebar">
+          <h2 class="aside-title">Components</h2>
+          <ul class="aside-links">
+            <li class="aside-link-item">
+              <a class="link-active" href="/document/alert.html">Alert</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/badge.html">Badge</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/button.html">Button</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/card.html">Card</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/image.html">Image</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/input.html">Input</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/list.html">List</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/navigation.html">Navigation</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/rating.html">Rating</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/toast.html">Toast</a>
+            </li>
+            <li class="aside-link-item">
+              <a href="/document/grid.html">Simplified Grid</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="pd-main">
+        <div class="pd-comp-headings">
+          <h3>Navigation</h3>
+          <p class="pd-comp-para">
+            Navigation bar is used to navigate either within the current
+            document or to other document. Below navigation component is
+            responsive and it is visible in medium and small devices.
+          </p>
+          <div class="pd-comp-sub-heading"><h4>Navigation Example</h4></div>
+          <p class="pd-comp-para">
+            Below shown Navigation works for both large screen and small
+            screens. As in small screen search bar goes down while logo and
+            other icons comes together above the search bar.
+          </p>
+        </div>
+
+        <div class="pd-template-container">
+          <div class="pd-template">
+            <div class="ha-content">
+              <header class="ha-header">
+                <div class="ha-logo">
+                  <a href="#"
+                    ><img src="/document/images/logo_navigation.png" alt=""
+                  /></a>
+                </div>
+
+                <div class="search-and-icons">
+                  <div class="ha-search-box">
+                    <input
+                      class="ha-search-text"
+                      type="text"
+                      name="name"
+                      placeholder="search"
+                    />
+                    <a class="ha-search-button" href="#">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="header-icons">
+                    <div class="ha-nav-icons">
+                      <a href="#">
+                        <button class="btn btn-default">Login</button></a
+                      >
+
+                      <div class="badge-icon">
+                        <div class="badge-on-icon">
+                          <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <span class="badge-number">0</span>
+                      </div>
+
+                      <div class="badge-icon">
+                        <div class="badge-on-icon">
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                          <span class="badge-number">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            </div>
+
+            <div class="ha-content-forsmall">
+              <header class="ha-header-forsmall">
+                <div class="logo-and-icon-for-small">
+                  <div class="ha-logo">
+                    <a href="#"
+                      ><img src="/document/images/logo_navigation.png" alt=""
+                    /></a>
+                  </div>
+
+                  <div class="ha-nav-icons">
+                    <a href="#">
+                      <button class="btn btn-default">Login</button></a
+                    >
+
+                    <div class="badge-icon">
+                      <div class="badge-on-icon">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                      </div>
+                      <span class="badge-number">0</span>
+                    </div>
+
+                    <div class="badge-icon">
+                      <div class="badge-on-icon">
+                        <a href="#">
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <span class="badge-number">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search">
+                  <div class="ha-search-box">
+                    <input
+                      class="ha-search-text"
+                      type="text"
+                      name="name"
+                      placeholder="search"
+                    />
+                    <a class="ha-search-button" href="#">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                </div>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <p class="pd-comp-para">
+          In below HTML code it has shown how to create such type of
+          navigations.
+        </p>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522ha-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522ha-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ha-logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Cimg%2520src%253D%2522%252Fdocument%252Fimages%252Flogo_navigation.png%2522%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-and-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ha-search-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522ha-search-text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522name%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522ha-search-button%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ha-nav-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-default%2522%253ELogin%253C%252Fbutton%253E%253C%252Fa%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-on-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-number%2522%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-on-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-number%2522%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+      <footer class="pd-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="pd-footer-icons">
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="pd-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
+    </div>
+    <script src="/document/burger_menu.js"></script>
+  </body>
+</html>
