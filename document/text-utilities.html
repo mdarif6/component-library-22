@@ -10,7 +10,7 @@
       type="image/png"
       sizes="16x16"
     />
-    <title>Alert</title>
+    <title>Text Utilities</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -105,8 +105,8 @@
               <a href="/document/rating.html">Rating</a>
             </li>
             <li class="aside-link-item">
-              <a href="/document/text-utilities.html">Text Utilities</a>
-            </li>
+                <a href="/document/text-utilities.html">Text Utilities</a>
+              </li>
             <li class="aside-link-item">
               <a href="/document/toast.html">Toast</a>
             </li>
@@ -118,54 +118,34 @@
       </aside>
       <main class="pd-main">
         <div class="pd-comp-headings">
-          <h3>Alert</h3>
+          <h3>Text Utilities</h3>
           <p class="pd-comp-para">
-            An alert displays a short, important message in a way that attract
-            user's attention for important information without interrupting the
-            user's flow.
+            Text utilities are used for text alignment and styles. Utilities are
+            simple HTML classes typically scoped to a single CSS property, and
+            can be used to style an object.
           </p>
-          <div class="pd-comp-sub-heading"><h4>Alert Examples</h4></div>
+          <div class="pd-comp-sub-heading"><h4>Heading Text</h4></div>
           <p class="pd-comp-para">
-            Six types of alerts as shown below named as - primary alert,
-            secondary alert, information alert, success alert, error alert and
-            warning alert.
+            We can use h1, h2, h3, h4, h5, h6 elements for headings. In same way
+            class names h1, h2, h3, h4, h5, h6 also can be used for headings.
           </p>
         </div>
 
         <div class="pd-template-container">
-          <div class="pd-template">
-            <div class="alert-box alert-primary">A primary alert</div>
-            <div class="alert-box alert-secondary">A secondary alert</div>
-
-            <div class="alert-box alert-information">
-              <span><i class="fas fa-info-circle"></i></span>
-              An information alert
-            </div>
-            <div class="alert-box alert-success">
-              <span><i class="fas fa-check-circle"></i></span>
-              A success alert
-            </div>
-            <div class="alert-box alert-error">
-              <span> <i class="fas fa-exclamation-circle"></i></span>
-              An error alert
-            </div>
-            <div class="alert-box alert-warning">
-              <span><i class="fas fa-exclamation-triangle"></i></span>
-              A warning alert
-            </div>
+          <div class="pd-template utilities">
+            <h1>H1-Heading1</h1>
+            <h2>H2-Heading2</h2>
+            <h3>H3-Heading3</h3>
+            <h4>H4-Heading4</h4>
+            <h5>H5-Heading5</h5>
+            <h6>H6-Heading6</h6>
           </div>
         </div>
-
-        <p class="pd-comp-para">
-          To use these alerts just use class name alert-box and also add class
-          according to alert type for like alert-primary. (e.g.class="alert-box
-          alert-primary"). You can copy html part from below code snippet too.
-        </p>
 
         <div class="pd-code-container">
           <div class="pd-template-code">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253EA%2520secondary%2520alert%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-information%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520information%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520success%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520An%2520error%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520warning%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Ch1%253EH1-Heading1%253C%252Fh1%253E%250A%2520%2520%253Ch2%253EH2-Heading2%253C%252Fh2%253E%250A%2520%2520%253Ch3%253EH3-Heading3%253C%252Fh3%253E%250A%2520%2520%253Ch4%253EH4-Heading4%253C%252Fh4%253E%250A%2520%2520%253Ch5%253EH5-Heading5%253C%252Fh5%253E%250A%2520%2520%253Ch6%253EH6-Heading6%253C%252Fh6%253E"
               style="
                 height: auto;
                 border: 0;
@@ -177,6 +157,80 @@
             </iframe>
           </div>
         </div>
+
+        <div class="pd-comp-sub-heading"><h4>Paragraph Text</h4></div>
+        <p class="pd-comp-para">
+          We can use just classes- text-left, text-center and text-right.
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template utilities">
+            <h3 class="text-left">H3-Heading Text Aligned Left</h3>
+            <h3 class="text-center">H3-Heading Text Aligned Center</h3>
+            <h3 class="text-right">H3-Heading Text Aligned Right</h3>
+          </div>
+        </div>
+
+        <div class="pd-code-container">
+          <div class="pd-template-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522text-left%2522%253EH3-Heading%2520Text%2520Aligned%2520Left%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-center%2522%253EH3-Heading%2520Text%2520Aligned%2520Center%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-right%2522%253EH3-Heading%2520Text%2520Aligned%2520Right%253C%252Fh3%253E"
+              style="
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="pd-comp-sub-heading"><h4>Some More Common Styles</h4></div>
+        <p class="pd-comp-para">
+            <ul>
+        <li>We can use class text-small-size, where size is 12px.</li>
+        <li> We can use class text-gray-color, to give gray color to text.</li>
+        <li>We can use mark tag with class text-highlight, to highlight a text.</li>
+        <li>We can use class text-strike, to strike through a text.</li>
+        <li>We can use class text-bold-weight, where weight of text is 700.</li>
+        <li>We can use class text-primary-color, to change the text color into primary color.</li>
+        </ul>   
+        </p>
+
+        <div class="pd-template-container">
+          <div class="pd-template utilities">
+            <p>
+              <small class="text-small-size"
+                >This is small size text Example</small
+              >
+            </p>
+            <p class="text-gray-color">This is gray text color Example</p>
+            <p>
+              This is
+              <mark class="text-highlight">highlighted text</mark>
+              Example
+            </p>
+            <p class="text-strike">This is no longer accurate text Example</p>
+            <p class="text-bold-weight">This is bold text Example</p>
+            <p class="text-primary-color">This is primary color text Example</p>
+
+           
+          </div>
+        </div>
+
+
+        <div class="pd-code-container">
+            <div class="pd-template-code">
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28138%2C41%2C230%2C1%29&t=solarized+light&wt=sharp&l=auto&width=680&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%253E%253Csmall%2520class%253D%2522text-small-size%2522%253EThis%2520is%2520small%2520size%2520text%2520Example%253C%252Fsmall%253E%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-gray-color%2522%253EThis%2520is%2520gray%2520text%2520color%2520Example%253C%252Fp%253E%250A%253Cp%253EThis%2520is%253Cmark%2520class%253D%2522text-highlight%2522%253Ehighlighted%2520text%253C%252Fmark%253EExample%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-strike%2522%253EThis%2520is%2520no%2520longer%2520accurate%2520text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold-weight%2522%253EThis%2520is%2520bold%2520text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-primary-color%2522%253EThis%2520is%2520primary%2520color%2520text%2520Example%253C%252Fp%253E"
+                style=" height: auto; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
+          </div>
+
       </main>
       <footer class="pd-footer">
         <div class="footer-heading">Social Media Presence</div>

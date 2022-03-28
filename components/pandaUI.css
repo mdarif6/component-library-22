@@ -11,6 +11,7 @@
 @import url(./rating/rating.css);
 @import url(./navigation/navigation.css);
 @import url(./modal/modal.css);
+@import url(./text-utilities/text-utilities.css);
 :root {
   --pd-default-color: #6e6969;
   --pd-primary-color: #8a29e6;
@@ -39,4 +40,5 @@
   --pd-box-shadow-color: #c4a8a8;
   --pd-navigation-color: #ebe7e7;
   --pd-modal-back-color: #4e4cb380;
+  --pd-gray-color: #808080;
 }
