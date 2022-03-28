@@ -10,6 +10,7 @@
 @import url(./grid/grid.css);
 @import url(./rating/rating.css);
 @import url(./navigation/navigation.css);
+@import url(./modal/modal.css);
 :root {
   --pd-default-color: #6e6969;
   --pd-primary-color: #8a29e6;
@@ -37,4 +38,5 @@
   --pd-busy-color: #f32020;
   --pd-box-shadow-color: #c4a8a8;
   --pd-navigation-color: #ebe7e7;
+  --pd-modal-back-color: #4e4cb380;
 }
