@@ -12,6 +12,7 @@
 @import url(./navigation/navigation.css);
 @import url(./modal/modal.css);
 @import url(./text-utilities/text-utilities.css);
+@import url(./slider/slider.css);
 :root {
   --pd-default-color: #6e6969;
   --pd-primary-color: #8a29e6;
