@@ -38,6 +38,14 @@ Ten Components created in PANDA UI Library.
 - Toast
 - Simplified Grid
 
+### (Remaining P1/P2 Components added)
+
+- Modal
+- Navigation
+- Rating
+- Slider
+- Text Utilites
+
 ## Run Locally
 
 Clone the project
